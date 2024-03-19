@@ -14,6 +14,5 @@ fn main() {
     println!("Print a tuple? {},{},{},{}", tup.0, tup.1, tup.2, tup.3);
 
     let pairs = [(1, 'a'), (2, 's'), (3, 'd')];
-    let dog: [i32; 5] = [1, 2, 3, 4, 5];
     println!("Pairs: {} ", pairs[0].1);
 }
