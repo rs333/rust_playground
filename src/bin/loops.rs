@@ -3,15 +3,13 @@ use std::collections::HashMap;
 fn counter() -> i32 {
     let mut counter = 0;
 
-    let result = loop {
+    loop {
         counter += 1;
 
         if counter == 10 {
             break counter * 2;
         }
-    };
-
-    result
+    }
 }
 
 fn labeled_loop() -> (i32, i32) {
@@ -46,8 +44,6 @@ fn while_loop() -> i32 {
     result
 }
 
-fn main() {}
-
 fn for_element_loop() -> i32 {
     let a = [10, 20, 30];
 
@@ -81,7 +77,16 @@ fn fib(n: u32, memo: &mut HashMap<u32, u32>) -> u32 {
     // Need a map for memoization
     let result = fib(n - 1, memo) + fib(n - 2, memo);
     memo.insert(n, result);
-    return result;
+    result
+}
+
+fn main() {
+    let _ = fib(42, &mut HashMap::new());
+    let _ = for_element_loop();
+    let _ = while_loop();
+    let _ = labeled_loop();
+    let _ = for_ranged_loop();
+    let _ = counter();
 }
 #[cfg(test)]
 mod tests {

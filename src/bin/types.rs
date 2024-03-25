@@ -7,7 +7,7 @@ fn main() {
 
         println!("a = {a}, a/2 = {},  a % 5 = {}", a / 2, a % 5);
     }
-    a = a / 2;
+    a /= 2;
     println!("a/2 = {a}");
 
     let tup: (i32, f64, u8, char) = (500, 6.4, 25, 'a');

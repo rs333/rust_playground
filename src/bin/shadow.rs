@@ -18,11 +18,11 @@ fn main() {
     let mut y = 5;
     println!("The address of y is {:p}", &y);
 
-    y = y + 1;
+    y += 1;
     println!("The address of y is {:p}", &y);
 
     {
-        y = y * 2;
+        y *= 2;
         println!("The address of y is {:p}", &y);
         println!("The value of y in the inner scope is: {y}");
     }
