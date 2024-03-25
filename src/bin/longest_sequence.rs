@@ -20,7 +20,7 @@ pub fn longest_sequence(s: &str) -> Option<&str> {
     while stop < s.len() {
         println!("{:?} =?= {:?}", b[stop], b[start]);
         if b[stop] == b[start] {
-            stop = stop + 1;
+            stop += 1;
         } else {
             if stop - start > longest {
                 longest = stop - start;
@@ -28,7 +28,6 @@ pub fn longest_sequence(s: &str) -> Option<&str> {
                 biggest_stop = stop;
             }
             start = stop;
-            stop = start;
         }
     }
     if biggest_start == biggest_stop {

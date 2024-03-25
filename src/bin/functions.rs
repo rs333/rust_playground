@@ -1,6 +1,7 @@
 fn main() {
     print_labeled_measurement(5, 'h');
     println!("five() = {}", five());
+    println!("plus_one(5) = {}", plus_one(5));
 }
 
 fn print_labeled_measurement(value: i32, unit_label: char) {
