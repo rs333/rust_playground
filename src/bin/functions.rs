@@ -11,7 +11,7 @@ fn print_labeled_measurement(value: i32, unit_label: char) {
 fn five() -> i32 {
     5
 }
-const ONE: i32 = 0 + 1;
+const ONE: i32 = 1;
 fn plus_one(a: i32) -> i32 {
     a + ONE
 }
