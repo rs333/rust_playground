@@ -37,6 +37,7 @@ mod my_mod {
 
         // Functions declared using `pub(self)` syntax are only visible within
         // the current module, which is the same as leaving them private
+        #[allow(clippy::needless_pub_self)]
         pub(self) fn public_function_in_nested() {
             println!("called `my_mod::nested::public_function_in_nested()`");
         }
