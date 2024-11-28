@@ -1,3 +1,4 @@
+pub mod cell;
 pub mod link_list;
 
 mod front_of_house {
